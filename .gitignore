@@ -292,6 +292,3 @@ __pycache__/
 obj/Dev/*
 *.user
 .vs/
-Assets/node_modules/*
-_CreateNewNuGetPackage/*
-docs/*

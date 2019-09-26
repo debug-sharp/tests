@@ -37,9 +37,19 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Desharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=cd60d985c52bcd6f, processorArchitecture=MSIL">
+      <HintPath>packages\Desharp.1.3.0\lib\net40\Desharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExceptionsRendering.cs" />
@@ -58,12 +68,6 @@
     <Compile Include="DumpingAndLogings\Tuples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DumpingAndLoging.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\desharp\Desharp.csproj">
-      <Project>{4f63d16b-a1e9-45a9-ac2f-831a1220b2b9}</Project>
-      <Name>Desharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Desharp.Tests.nuspec">
